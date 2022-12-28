@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-gorkis-dev-64710-authRole",
+      "UnauthRoleArn": "arn:aws:iam::588251703617:role/amplify-gorkis-dev-64710-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::588251703617:role/amplify-gorkis-dev-64710-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-gorkis-dev-64710-deployment",
+      "UnauthRoleName": "amplify-gorkis-dev-64710-unauthRole",
+      "StackName": "amplify-gorkis-dev-64710",
+      "StackId": "arn:aws:cloudformation:us-east-1:588251703617:stack/amplify-gorkis-dev-64710/5e7bc950-86a5-11ed-8a27-0ae642554bcb",
+      "AmplifyAppId": "d3m5bet49ys5o6"
+    },
+    "categories": {
+      "auth": {
+        "gorkis50f0d54f": {}
+      }
+    }
+  }
+}
