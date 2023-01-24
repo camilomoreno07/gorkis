@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import loginImg from '../assets/mia.png'
+import loginImg from '../assets/students.jpg'
 import { Amplify, Auth } from 'aws-amplify';
 import awsmobile from '../aws-exports';
 Amplify.configure(awsmobile);
@@ -9,7 +9,6 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [username, setUsername] = useState('');
   const [error, setError] = useState(null);
-
   const navigate = useNavigate();
 
   async function signIn(event) {
@@ -17,11 +16,11 @@ const Login = () => {
     try {
       await Auth.signIn(username, password);
       navigate('/jobs');
-  } catch (error) {
+    } catch (error) {
       console.log('error signing in', error);
       setError(error);
+    }
   }
-}
 
   return (
     <>
@@ -32,24 +31,26 @@ const Login = () => {
 
         <div className='bg-white grid grid-flow-row px-5 col-span-1'>
           <div className='hidden sm:flex  justify-end p-5 pr-10'>
-            <h3 className='text-3xl font-bold'><Link to="/">Gorkis</Link></h3>
+            <h3 className='text-3xl font-bold'>
+              <Link to="/">Gorkis</Link>
+            </h3>
           </div>
           <div className='flex flex-col w-full justify-center sm:justify-start'>
             <form className='max-w-[500px] w-full mx-auto bg-gray-900 p-8 px-8 rounded-lg' onSubmit={signIn}>
-            {error && <p>{error.message}</p>}
+              {error && <p>{error.message}</p>}
               <h2 className='text-4xl dark:text-white font-bold text-center'>Inicia Sesión</h2>
               <div className='flex flex-col text-gray-400 py-2'>
                 <label>Usuario</label>
-                <input className='rounded-lg bg-gray-100 mt-2 p-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none' type="text" 
-                value={username}
-                onChange={(event) => setUsername(event.target.value)}
+                <input className='rounded-lg bg-gray-100 mt-2 p-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none' type="text"
+                  value={username}
+                  onChange={(event) => setUsername(event.target.value)}
                 />
               </div>
               <div className='flex flex-col text-gray-400 py-2'>
                 <label>Contraseña</label>
-                <input className='rounded-lg bg-gray-100 mt-2 p-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none' type="password" 
-                value={password}
-                onChange={(event) => setPassword(event.target.value)}
+                <input className='rounded-lg bg-gray-100 mt-2 p-2 focus:border-blue-500 focus:bg-gray-800 focus:outline-none' type="password"
+                  value={password}
+                  onChange={(event) => setPassword(event.target.value)}
                 />
               </div>
               <div className='flex justify-between text-gray-400 py-2'>
@@ -65,7 +66,6 @@ const Login = () => {
       </div>
     </>
   )
- 
 }
 
 export default (Login);

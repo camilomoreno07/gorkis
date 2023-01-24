@@ -3,12 +3,13 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 
+
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
        
-        <div className="container mx-auto p-5 bg-white  sm:flex sm:items-center sm:justify-between">
+        <div className="mx-auto py-2 px-6 bg-white  sm:flex sm:items-center sm:justify-between">
             <div className="flex flex-row content-center justify-between items-center ">
                 <span className='text-3xl'>
                     <Link to="/" className='font-bold'>Gorkis</Link>

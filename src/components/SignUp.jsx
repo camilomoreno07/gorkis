@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import loginImg from '../assets/mia.png';
+import loginImg from '../assets/students.jpg'
 import { Link, useNavigate } from 'react-router-dom';
 import { Amplify, Auth } from 'aws-amplify';
 import awsmobile from '../aws-exports';
@@ -90,12 +90,6 @@ const SignUp = () => {
                   value={password}
                   onChange={(event) => setPassword(event.target.value)}
                 />
-              </div>
-              <div className='flex justify-between text-gray-400 py-2'>
-                <p className='flex items-center'><input className='mr-2' type="checkbox" />Recuerdame</p>
-                <p>
-                  Olvidé mi contraseña
-                </p>
               </div>
               <button className='w-full my-5 py-2 bg-teal-500' type='submit'>Registrar</button>
               <div className='flex justify-center'>

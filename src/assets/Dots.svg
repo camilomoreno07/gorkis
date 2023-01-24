@@ -1,0 +1,59 @@
+<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.3" clip-path="url(#clip0_7_794)">
+<g clip-path="url(#clip1_7_794)">
+<circle cx="2" cy="2" r="2" fill="white"/>
+<circle cx="18" cy="2" r="2" fill="white"/>
+<circle cx="34" cy="2" r="2" fill="white"/>
+<circle cx="50" cy="2" r="2" fill="white"/>
+<circle cx="66" cy="2" r="2" fill="white"/>
+</g>
+<g clip-path="url(#clip2_7_794)">
+<circle cx="2" cy="18" r="2" fill="white"/>
+<circle cx="18" cy="18" r="2" fill="white"/>
+<circle cx="34" cy="18" r="2" fill="white"/>
+<circle cx="50" cy="18" r="2" fill="white"/>
+<circle cx="66" cy="18" r="2" fill="white"/>
+</g>
+<g clip-path="url(#clip3_7_794)">
+<circle cx="2" cy="34" r="2" fill="white"/>
+<circle cx="18" cy="34" r="2" fill="white"/>
+<circle cx="34" cy="34" r="2" fill="white"/>
+<circle cx="50" cy="34" r="2" fill="white"/>
+<circle cx="66" cy="34" r="2" fill="white"/>
+</g>
+<g clip-path="url(#clip4_7_794)">
+<circle cx="2" cy="50" r="2" fill="white"/>
+<circle cx="18" cy="50" r="2" fill="white"/>
+<circle cx="34" cy="50" r="2" fill="white"/>
+<circle cx="50" cy="50" r="2" fill="white"/>
+<circle cx="66" cy="50" r="2" fill="white"/>
+</g>
+<g clip-path="url(#clip5_7_794)">
+<circle cx="2" cy="66" r="2" fill="white"/>
+<circle cx="18" cy="66" r="2" fill="white"/>
+<circle cx="34" cy="66" r="2" fill="white"/>
+<circle cx="50" cy="66" r="2" fill="white"/>
+<circle cx="66" cy="66" r="2" fill="white"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_7_794">
+<rect width="68" height="68" fill="white"/>
+</clipPath>
+<clipPath id="clip1_7_794">
+<rect width="68" height="4" fill="white"/>
+</clipPath>
+<clipPath id="clip2_7_794">
+<rect width="68" height="4" fill="white" transform="translate(0 16)"/>
+</clipPath>
+<clipPath id="clip3_7_794">
+<rect width="68" height="4" fill="white" transform="translate(0 32)"/>
+</clipPath>
+<clipPath id="clip4_7_794">
+<rect width="68" height="4" fill="white" transform="translate(0 48)"/>
+</clipPath>
+<clipPath id="clip5_7_794">
+<rect width="68" height="4" fill="white" transform="translate(0 64)"/>
+</clipPath>
+</defs>
+</svg>

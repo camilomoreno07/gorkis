@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "gorkis50f0d54f_identitypool_50f0d54f",
+    "identityPoolName": "gorkis011cab9e_identitypool_011cab9e",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "gorkis50f0d54f",
-    "userPoolName": "gorkis50f0d54f_userpool_50f0d54f",
+    "resourceNameTruncated": "gorkis011cab9e",
+    "userPoolName": "gorkis011cab9e_userpool_011cab9e",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,10 +31,10 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "gorkis50f0d54f_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "gorkis011cab9e_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "50f0d54f",
-    "resourceName": "gorkis50f0d54f",
+    "sharedId": "011cab9e",
+    "resourceName": "gorkis011cab9e",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "default",
     "userPoolGroupList": [],
