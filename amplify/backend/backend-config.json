@@ -1,12 +1,6 @@
 {
-  "hosting": {
-    "S3AndCloudFront": {
-      "service": "S3AndCloudFront",
-      "providerPlugin": "awscloudformation"
-    }
-  },
   "auth": {
-    "gorkis011cab9e": {
+    "gorkisa35ec66a": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],

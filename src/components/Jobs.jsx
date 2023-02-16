@@ -1,13 +1,32 @@
 import { React, useState, useEffect } from 'react'
 import { Amplify, Auth } from 'aws-amplify';
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
+import ServiceCard from './ServiceCard';
 import awsmobile from '../aws-exports';
 Amplify.configure(awsmobile);
 
+const API_URL = 'https://yul9f2ne29.execute-api.us-east-1.amazonaws.com/dev/services';
+
 const Jobs = () => {
   const [user, setUser] = useState(null);
+  const [services, setServices] = useState([]);
+
+  const searchServices = async () => {
+    try {
+      const response = await fetch(API_URL);
+      const data = await response.json();
+      setServices(data.services); // adjust this to match the response format
+      console.log(data.services)
+    } catch (error) {
+      console.error(error);
+    }
+}
 
   useEffect(() => {
+
+    
+    searchServices();
+
     async function fetchUser() {
 
       try{
@@ -39,6 +58,21 @@ const Jobs = () => {
         </div>
         <div className='basis-1/4 hidden sm:flex justify-end items-center'>
            <p>{user != null ? user.username : "Holi"}</p></div>
+      </div>
+      <div>
+      {
+                services?.length > 0 ? (
+                    <div className="container">
+                        {services.map((service) => (<ServiceCard service={service} />))}
+                    </div>
+                )
+                    : (
+                        <div className="empty">
+                            <h2>No movies found</h2>
+                        </div>
+                    )
+            }
+            <img src='https://images-gorkis-dev.s3.us-east-1.amazonaws.com/dog-puppy-on-garden-royalty-free-image-1586966191.jpg"' alt='lol' />
       </div>
     </>
   );
