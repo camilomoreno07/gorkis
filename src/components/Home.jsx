@@ -11,7 +11,7 @@ const Home = () => (
     <div>
         <Navbar />
         <Header />
-        <Options/>
+        
         <SocialProof/>
         <Footer/>
         

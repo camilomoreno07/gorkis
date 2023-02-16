@@ -53,7 +53,7 @@ const SignUp = () => {
     try {
       await Auth.confirmSignUp(username, confirmationCode);
       console.log('User confirmed');
-      navigate('/jobs');
+      navigate('/services');
     } catch (error) {
       setError(error);
     }

@@ -15,7 +15,7 @@ const Login = () => {
     event.preventDefault();
     try {
       await Auth.signIn(username, password);
-      navigate('/jobs');
+      navigate('/services');
     } catch (error) {
       console.log('error signing in', error);
       setError(error);
