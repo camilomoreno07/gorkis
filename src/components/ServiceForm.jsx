@@ -5,7 +5,9 @@ import { Amplify, Auth } from 'aws-amplify';
 import awsmobile from '../aws-exports';
 Amplify.configure(awsmobile);
 
-const ENDPOINT = 'https://cqb53hqk57.execute-api.us-east-1.amazonaws.com/dev/upload';
+const ENDPOINT = 'https://cqb53hqk57.execute-api.us-east-1.amazonaws.com/dev/upload'
+/*key: photo*/
+
 /* Pagina de registro de usuarios con verificación*/
 const ServiceForm = () => {
 
@@ -55,6 +57,8 @@ const ServiceForm = () => {
     image.src = URL.createObjectURL(event.target.files[0]);
   };
   /*https://docs.amplify.aws/lib/auth/emailpassword/q/platform/js/*/
+
+  
   return(
     <React.Fragment>
     <div>
@@ -102,7 +106,7 @@ const ServiceForm = () => {
             <label class="block text-sm font-medium text-gray-700">
                 Imagen del servicio
             </label>
-           
+          
             <div class="flex items-center justify-center w-full">
                 <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-400 border-dashed rounded-lg cursor-pointer bg-white-50 ">
                     <div class="flex flex-col items-center justify-center pt-5 pb-6">

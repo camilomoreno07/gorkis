@@ -39,7 +39,7 @@ const SocialProof = () => {
                             </p>
                         </div>
                         <div className='flex justify-center items-center mt-5'>
-                            
+                            <img src={User1} alt="User1" className='h-10 mr-5' />
                             <div className='flex flex-col text-white'>
                                 <p className='font-semibold'>Jhon Uribe</p>
                                 <p className='font-thin text-sm'>Estudiante</p>
@@ -60,7 +60,7 @@ const SocialProof = () => {
                             </p>
                         </div>
                         <div className='flex justify-center items-center mt-5'>
-                            
+                            <img src={User1} alt="User1" className='h-10 mr-5' />
                             <div className='flex flex-col text-white'>
                                 <p className='font-semibold'>Juana Martinez</p>
                                 <p className='font-thin text-sm'>Profesora</p>
