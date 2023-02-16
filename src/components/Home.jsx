@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import Header from './Header';
 import Footer from './Footer';
 import SocialProof from './SocialProof';
+import PopularServices from './PopularServices';
 
 /* Pagina Principal */
 const Home = () => (
@@ -10,7 +11,9 @@ const Home = () => (
         <Navbar />
         <Header />
         <SocialProof/>
+        <PopularServices/>
         <Footer/>
+        
     </div>
 );
 

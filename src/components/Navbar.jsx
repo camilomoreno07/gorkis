@@ -21,6 +21,11 @@ const Navbar = () => {
             </div>
             <ul className={`sm:flex sm:items-center z-[-1] sm:z-auto sm:static ${open ? "": "absolute opacity-0 w-full top-[-400px] left-0"} bg-white  sm:w-auto sm:py-0 py-4 sm:pl-0  sm:opacity-100  transition-all ease-in duration-500`}>
                 <li className="mx-4 my-6 sm:my-0">
+                    <Link to="/search">
+                        <span className='hover:text-teal-900'>Explora</span>
+                    </Link>
+                </li>
+                <li className="mx-4 my-6 sm:my-0">
                     <Link to="/login">
                         <span className='hover:text-teal-900'>Iniciar Sesión</span>
                     </Link>
