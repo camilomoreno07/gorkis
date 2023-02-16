@@ -51,10 +51,17 @@ const Header = () => {
                         <img src={User4} alt="User4" className='absolute  lg:right-28 lg:top-28 xl:h-52 z-40' />
                         <img src={HalfCircle3} alt="HalfCircle3" className='absolute bottom-0 inset-x-1/2 z-0' />
                     </div>
+                    <div className='relative z-0'>
+                        <img src={Pattern} alt="Pattern" className='absolute  sm:-inset-x-20 sm:inset-y-48 lg:inset-x-24 lg:inset-y-32 xl:h-36' />
+                        <img src={User3} alt="User3" className='absolute  sm:-inset-x-20 sm:inset-y-48 lg:inset-x-16 lg:inset-y-28 xl:h-36' />
+                        <img src={User4} alt="User4" className='absolute  lg:right-28 lg:top-28 xl:h-52 z-40' />
+                        <img src={HalfCircle3} alt="HalfCircle3" className='absolute bottom-0 inset-x-1/2 z-0' />
+                    </div>
                 </div>
-
             </div>
+
         </div>
+        
 
     )
 }
