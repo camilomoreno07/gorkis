@@ -16,14 +16,9 @@ const SocialProof = () => {
                 <div className='flex flex-col relative space-y-4 sm:space-y-0 mx-5 sm:flex-row justify-between sm:justify-center '>
                     <div className=' sm:ml-auto sm:mr-5'>
                         <div className='bg-white rounded-md md:w-[30rem]'>
-                            <p className='text-center p-5'>We had an incredible experience working with
-                                Landify and were impressed they made such a big
-                                difference in only three weeks. Our team is so grateful
-                                for the wonderful improvements they made
-                                and their ability to get familiar
-                                with the concept so quickly. It
-                                acted as a catalyst to take our design to
-                                the next level and get more eyes on our product.
+                            <p className='text-center p-5'>Estoy teniendo bastantes trabajos en la universidad por lo cual he faltado a una materia,
+                            gracias a la plataforma me pude contactar con un muy buen tutor que me ha explicado las clases a las cuales he faltado y ya me siento
+                            mas preparado para los parciales que se aproximan, ademas el precio fue lo justo 
 
                             </p>
                         </div>
@@ -38,15 +33,9 @@ const SocialProof = () => {
                     </div>
                     <div className=' sm:mr-auto sm:ml-5'>
                         <div className='bg-white rounded-md md:w-[30rem]'>
-                            <p className='text-center p-5'>We had an incredible experience working with
-                                Landify and were impressed they made such a big
-                                difference in only three weeks. Our team is so grateful
-                                for the wonderful improvements they made
-                                and their ability to get familiar
-                                with the concept so quickly. It
-                                acted as a catalyst to take our design to
-                                the next level and get more eyes on our product.
-
+                            <p className='text-center p-5'>Yo soy estudiante de filosofia y ultimamente me he estado interesando por el 
+                            calculo ya que me queda un poco de tiempo libre y unos amigos me han dicho que es muy interesante he decidido
+                            mediante la plataforma Gorkis buscar alguien que me pueda enseñar, ya lo estoy entendiendo
                             </p>
                         </div>
                         <div className='flex justify-center items-center mt-5'>
@@ -57,10 +46,29 @@ const SocialProof = () => {
                             </div>
                         </div>
                     </div>
+
                     <img src={Quotes} alt="User1" className='hidden md:inline absolute right-10 -top-28' />
                 </div>
             </div>
+            <div></div>
+            <div className=' sm:ml-auto sm:mr-5 justify-center' >
+                        <div className='bg-white rounded-md text-center p-5' >
+                            <p className='text-center p-5' >Queria que alguien hiciera un retrato de mi hijo
+                             pero no sabia donde buscarlo, 
+                            entre a esta plataforma puse la palabra clave retratos y me salieron muchos estudiantes
+                             que tienen unos dotes de arte esplendidos
+                            </p>
+                        </div>
+                        <div className='flex justify-center items-center mt-5'>
+                            <img src={User1} alt="User1" className='h-10 mr-5' />
+                            <div className='flex flex-col text-white'>
+                                <p className='font-semibold'>Juana Martinez</p>
+                                <p className='font-thin text-sm'>Profesora</p>
+                            </div>
+                        </div>
+                    </div>
         </div>
+        
     )
 }
 
