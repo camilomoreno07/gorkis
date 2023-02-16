@@ -1,20 +1,15 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-gorkis-dev-160314-authRole",
-      "UnauthRoleArn": "arn:aws:iam::588251703617:role/amplify-gorkis-dev-160314-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::588251703617:role/amplify-gorkis-dev-160314-authRole",
+      "AuthRoleName": "amplify-gorkis-dev-175121-authRole",
+      "UnauthRoleArn": "arn:aws:iam::588251703617:role/amplify-gorkis-dev-175121-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::588251703617:role/amplify-gorkis-dev-175121-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-gorkis-dev-160314-deployment",
-      "UnauthRoleName": "amplify-gorkis-dev-160314-unauthRole",
-      "StackName": "amplify-gorkis-dev-160314",
-      "StackId": "arn:aws:cloudformation:us-east-1:588251703617:stack/amplify-gorkis-dev-160314/2a8fc470-ad74-11ed-834e-121f2d48d631",
-      "AmplifyAppId": "d1uf2rlser7pa6"
-    },
-    "categories": {
-      "auth": {
-        "gorkisa35ec66a": {}
-      }
+      "DeploymentBucketName": "amplify-gorkis-dev-175121-deployment",
+      "UnauthRoleName": "amplify-gorkis-dev-175121-unauthRole",
+      "StackName": "amplify-gorkis-dev-175121",
+      "StackId": "arn:aws:cloudformation:us-east-1:588251703617:stack/amplify-gorkis-dev-175121/6f2c86d0-ae4c-11ed-be08-12235e503b61",
+      "AmplifyAppId": "d3w1isj5nlbarh"
     }
   }
 }
