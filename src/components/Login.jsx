@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
-import loginImg from '../assets/students.jpg'
+import loginImg from '../assets/students.webp'
 import { Amplify, Auth } from 'aws-amplify';
 import awsmobile from '../aws-exports';
 Amplify.configure(awsmobile);

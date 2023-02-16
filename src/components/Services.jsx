@@ -75,7 +75,7 @@ const Services = () => {
       <div className='mx-10 pt-5 '>
         {
           services?.length > 0 ? (
-            <div className=" grid grid-cols-1 sm:grid-cols-4 gap-4">
+            <div className=" grid justify-items-center grid-cols-1 ss:grid-cols-2 sm:grid-cols-4 gap-y-5">
               {services.map((service) => (<ServiceCard service={service} />))}
             </div>
           )
@@ -85,6 +85,7 @@ const Services = () => {
               </div>
             )
         }
+        
       </div>
     </>
   );

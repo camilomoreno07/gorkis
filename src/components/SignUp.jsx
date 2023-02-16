@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import loginImg from '../assets/students.jpg'
+import loginImg from '../assets/students.webp'
 import { Link, useNavigate } from 'react-router-dom';
 import { Amplify, Auth } from 'aws-amplify';
 import awsmobile from '../aws-exports';
@@ -121,7 +121,10 @@ const SignUp = () => {
               </div>
 
               </div>
-              
+              <div class="flex items-center mt-5">
+                <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"/>
+              <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Soy Freelancer</label>      
+              </div>
               <button className='w-full my-5 py-2 bg-teal-500' type='submit'>Registrar</button>
               <div className='flex justify-center'>
                 <div className='mx-auto'>
@@ -141,12 +144,7 @@ const SignUp = () => {
                   onChange={(event) => setConfirmationCode(event.target.value)}
                 />
               </div>
-              <div className='flex justify-between text-gray-400 py-2'>
-                <p className='flex items-center'><input className='mr-2' type="checkbox" />Recuerdame</p>
-                <p>
-                  Olvidé mi contraseña
-                </p>
-              </div>
+              
               <button className='w-full my-5 py-2 bg-teal-500' type='submit'>Registrar</button>
 
             </form>)}

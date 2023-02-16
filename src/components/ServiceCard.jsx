@@ -2,8 +2,8 @@ import React from "react";
 
 const ServiceCard = ({ service }) => {
     return (
-        <div>
-            <div class="rounded overflow-hidden shadow-lg">
+        
+            <div class="w-96 mx-0 rounded overflow-hidden shadow-lg">
                 <img class="w-full" src={service.imageUrl} alt="Sunset in the mountains" />
                 <div class="px-6 py-4">
                     <div class="font-bold text-xl mb-2">{service.title}</div>
@@ -19,7 +19,7 @@ const ServiceCard = ({ service }) => {
                     </a>
                 </div>
             </div>
-        </div>
+       
 
     )
 }
