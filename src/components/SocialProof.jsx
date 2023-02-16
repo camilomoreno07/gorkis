@@ -4,7 +4,7 @@ import Quotes from '../assets/Quotes.svg';
 
 const SocialProof = () => {
     return (
-        <div className='mt-10 sm:mt-5 w-full bg-gray-900 rounded-t-3xl sm:rounded-none' >
+        <div className='mt-10 sm:mt-0  w-full bg-gray-900 rounded-t-3xl sm:rounded-none' >
             <div className='md:mx-52 py-10 flex flex-col justify-center'>
                 <div className='flex my-10 justify-center sm:justify-start'> 
                     <p className='text-white  text-2xl sm:text-6xl 
@@ -31,7 +31,7 @@ const SocialProof = () => {
                         </div>
 
                     </div>
-                    <div className=' sm:mr-auto sm:ml-5'>
+                    <div className=' sm:mr-auto sm:ml-5'> 
                         <div className='bg-white rounded-md md:w-[30rem]'>
                             <p className='text-center p-5'>Yo soy estudiante de filosofia y ultimamente me he estado interesando por el 
                             calculo ya que me queda un poco de tiempo libre y unos amigos me han dicho que es muy interesante he decidido

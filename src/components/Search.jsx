@@ -1,19 +1,17 @@
 import React from 'react'
 import Navbar from './Navbar';
 import Footer from './Footer';
-import PopularServices from './PopularServices';
-import Header from './Header';
+import ServiceForm from './ServiceForm';
+
 /* Pagina Busqueda */
 
 const Search = () => {
     
     return(
     <React.Fragment>
-    
         <Navbar />
-        <PopularServices/>
+        <ServiceForm/>
         <Footer/>
-    
     </React.Fragment>)
     
 

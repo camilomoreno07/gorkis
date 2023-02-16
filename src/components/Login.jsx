@@ -53,12 +53,6 @@ const Login = () => {
                   onChange={(event) => setPassword(event.target.value)}
                 />
               </div>
-              <div className='flex justify-between text-gray-400 py-2'>
-                <p className='flex items-center'><input className='mr-2' type="checkbox" />Recuerdame</p>
-                <p>
-                  Olvidé mi contraseña
-                </p>
-              </div>
               <button className='w-full my-5 py-2 bg-teal-500' type='submit'>Entrar</button>
             </form>
           </div>

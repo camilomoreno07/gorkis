@@ -1,6 +1,13 @@
 {
   "auth": {
+<<<<<<< HEAD
     "gorkis011cab9e": {
+=======
+    "gorkisa35ec66a": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+>>>>>>> 5458578356c830927c956abe380143f9eb06559a
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {

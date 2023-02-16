@@ -1,13 +1,32 @@
 import { React, useState, useEffect } from 'react'
 import { Amplify, Auth } from 'aws-amplify';
 import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
+import ServiceCard from './ServiceCard';
 import awsmobile from '../aws-exports';
 Amplify.configure(awsmobile);
 
+const API_URL = 'https://yul9f2ne29.execute-api.us-east-1.amazonaws.com/dev/services';
+
 const Jobs = () => {
   const [user, setUser] = useState(null);
+  const [services, setServices] = useState([]);
+
+  const searchServices = async () => {
+    try {
+      const response = await fetch(API_URL);
+      const data = await response.json();
+      setServices(data.services); // adjust this to match the response format
+      console.log(data.services)
+    } catch (error) {
+      console.error(error);
+    }
+}
 
   useEffect(() => {
+
+    
+    searchServices();
+
     async function fetchUser() {
 
       try{
@@ -39,6 +58,25 @@ const Jobs = () => {
         </div>
         <div className='basis-1/4 hidden sm:flex justify-end items-center'>
            <p>{user != null ? user.username : "Holi"}</p></div>
+      </div>
+
+      <div className='mt-10 sm:mt-5 w-full bg-gray-900 rounded-t-3xl sm:rounded-none' >
+        <div className='md:mx-52 py-10 flex flex-col justify-center'>
+          <div class="grid grid-flow-row gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">            
+            { 
+                services?.length > 0 ? (
+                    <div className="container">
+                        {services.map((service) => (<ServiceCard service={service} />))}
+                    </div>
+                )
+                    : (
+                        <div className="empty">
+                            <h2>No movies found</h2>
+                        </div>
+                    )
+            }
+        </div>
+        </div>
       </div>
     </>
   );
